@@ -1,11 +1,5 @@
 # UI E2E Tests — Playwright & TypeScript
 
-## Name
-
-**ui-e2e-tests-playwright** — UI end-to-end test suite using Playwright and TypeScript.
-
----
-
 ## Project description
 
 End-to-end UI test suite for the **KIB Shopify demo store**. Built with Playwright and TypeScript, it covers:
@@ -23,7 +17,7 @@ Tests run across **Chromium**, **Firefox**, and **WebKit** using the Page Object
 
 - **Node.js** 18 or later
 - **npm** or **pnpm**
-- Network access to the demo store base URL (see [Configuration](#configuration))
+- Network access to the demo store base URL (see `playwright.config.ts`)
 
 ---
 
@@ -115,22 +109,6 @@ End-to-end flow: install → run tests → view report.
 ├── tsconfig.json
 └── package.json
 ```
-
----
-
-## Configuration
-
-| Setting | Value |
-|--------|--------|
-| **Base URL** | `https://kib-connect-demo-store-4.myshopify.com` |
-| **Headless** | Default: `true`. Use `HEADLESS=false npm test` for headed mode. |
-| **Browsers** | Chromium, Firefox, WebKit (use `--project=<name>` for a single browser). |
-| **Report output** | `playwright-report/` (HTML reporter). |
-| **Traces** | `on-first-retry` — saved under `test-results/`. |
-| **Retries** | 0 locally; 2 in CI. |
-| **Workers** | 5 locally; 1 in CI. |
-
-Main options are defined in `playwright.config.ts`.
 
 ---
 
