@@ -1,0 +1,12 @@
+node_modules/
+dist/
+test-results/
+.blob/
+.env
+.env.local
+*.log
+.DS_Store
+
+# Ignore all playwright-report contents except the main report
+playwright-report/*
+!playwright-report/index.html

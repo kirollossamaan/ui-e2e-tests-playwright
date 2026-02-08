@@ -1,0 +1,16 @@
+{
+  "name": "ui-e2e-tests-playwright",
+  "version": "0.0.1",
+  "description": "KIB Demo Store E2E tests with Playwright + TypeScript",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}
